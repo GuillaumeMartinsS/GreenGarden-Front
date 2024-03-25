@@ -1,7 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 
+import {useEffect} from 'react'
+import {useDispatch, useSelector} from 'react-redux';
+// == IMPORT ASSETS
+import {
+  getGardenById,
+} from '../../actions/gardens';
+
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(
+    () => {
+      dispatch(getGardenById());
+    },
+    [dispatch],
+  );
+
+  const state = useSelector((state) => state.garden);
+  console.log('je lis le state');
+  console.log(state)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +36,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React {console.log('lala')}
+          Learn React 
+          {console.log('lala')};
         </a>
       </header>
     </div>
