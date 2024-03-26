@@ -3,10 +3,13 @@ import './App.css';
 
 import {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux';
+
 // == IMPORT ASSETS
 import {
   getGardenById,
 } from '../../actions/gardens';
+
+import Header from '../Header';
 
 function App() {
 
@@ -25,7 +28,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+
+
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -39,7 +46,7 @@ function App() {
           Learn React 
           {console.log('lala')};
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
