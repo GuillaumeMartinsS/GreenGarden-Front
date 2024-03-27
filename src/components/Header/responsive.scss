@@ -1,0 +1,16 @@
+
+@media screen and (min-width : 600px){
+    .header {
+            &__title {
+                display:block;
+                font-size : 2em; 
+                justify-content: center;
+            }
+            &__buttun--connexion{
+                display: block;
+                justify-content: flex-end;
+                margin-right: 5rem;
+            }
+        }
+    }
+            

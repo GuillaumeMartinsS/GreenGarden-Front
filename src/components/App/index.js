@@ -11,6 +11,8 @@ import {
 
 import Header from '../Header';
 
+import './styles.scss';
+
 function App() {
 
   const dispatch = useDispatch();

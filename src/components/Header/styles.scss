@@ -1,0 +1,36 @@
+
+.header {
+    
+    &__container {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 3rem;
+        background-color: rgb(5, 78, 5);
+        color: white;
+        text-align : center;
+        padding: 0 2rem;
+        border-bottom: 10px solid rgb(68, 18, 18);
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display:none;
+    }
+
+    &__logo{
+        height: 2em;
+        width: 2em;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+    }
+
+    
+
+}
+
+@import "./responsive.scss";
