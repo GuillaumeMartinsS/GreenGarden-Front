@@ -15,6 +15,7 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
+        padding: 1.5em;
     }
 
     &__title {
@@ -27,6 +28,13 @@
         background-size: 100%;
         background-repeat: no-repeat;
         justify-content: flex-start;
+    }
+
+    &__button{
+        
+        &--connexion {
+            display:none;
+        }
     }
 
     
