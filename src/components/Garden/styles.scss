@@ -1,0 +1,12 @@
+
+
+.main__container
+{
+    background-image: url("./prairie.jpeg") ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+@import "./responsive.scss";

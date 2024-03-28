@@ -3,6 +3,7 @@ import './App.css';
 
 import {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
 
 // == IMPORT ASSETS
 import {
@@ -10,6 +11,7 @@ import {
 } from '../../actions/gardens';
 
 import Header from '../Header';
+import Garden from '../Garden';
 import Footer from '../Footer';
 
 import './styles.scss';
@@ -32,6 +34,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Routes>
+        <Route 
+          path='/garden/:id' element={<Garden/>}  />
+      </Routes>
       <Footer />
 
 
