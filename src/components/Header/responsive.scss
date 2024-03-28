@@ -1,0 +1,21 @@
+
+@media screen and (min-width : 600px){
+
+    .header {
+            &__title {
+                display:block;
+                font-size : 2em; 
+                justify-content: center;
+            }
+            &__button--connexion{
+                padding: 0;
+                margin: 0;
+            }
+
+            &__button--icon{
+            padding-right: 0rem;
+            padding-left: 1rem;
+            }
+    }
+}
+            
