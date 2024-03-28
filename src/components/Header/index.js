@@ -9,7 +9,7 @@ const Header = () => (
   <header className='header__container'>
     <div className="header__logo" style={{ "backgroundImage": `url(${Logo})`}} />
     <p className='header__title'>Green Garden</p>
-    <Button className="header__button--connexion">Connexion
+    <Button color="green" className="header__button--connexion">Connexion
       <Icon name="address card" className="header__button--icon"/>
     </Button>
   </header>  
