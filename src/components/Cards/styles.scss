@@ -1,0 +1,30 @@
+
+.article
+{
+    display: flex;
+    width: 12em;
+    height: 16em;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom:4em;
+
+    &__img
+    {
+        display: block;
+        display: flex;
+        background-image: url("./téléchargement.jpeg");
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 80%;
+        width: 80%;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 0.5em;
+        border: 0.2em solid rgb(8, 58, 3);
+    }
+}
+
+@import "./responsive.scss";

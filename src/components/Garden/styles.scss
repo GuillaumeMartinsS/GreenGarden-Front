@@ -1,12 +1,30 @@
 
 
-.main__container
-{
-    background-image: url("./prairie.jpeg") ;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
-    background-position:center;
+.main{
+
+    &__container
+    {
+        background-image: url("./prairie.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        align-content: space-between;
+        height: 100vh;
+    }
+
+
+    &__garden{
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-content:end;
+        flex-wrap: wrap;
+    }
+
+
 }
+
+
+
 
 @import "./responsive.scss";
