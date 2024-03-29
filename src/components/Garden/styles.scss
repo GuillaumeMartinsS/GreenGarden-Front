@@ -4,21 +4,34 @@
 
     &__container
     {
+        display:flex;
         background-image: url("./prairie.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
         align-content: space-between;
-        height: 100vh;
+        justify-content: space-between;
+        display:flex;
+        border:solid 0.2em blue;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
     }
 
 
     &__garden{
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: space-around;
         align-content:end;
         flex-wrap: wrap;
+    }
+
+    &__button{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 

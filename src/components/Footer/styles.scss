@@ -1,24 +1,33 @@
-.footer{
 
-    
+
+
+.footer{
     &__container{
-        position: absolute;
-        bottom: 0;
-        top:50em;
-        background-color: rgb(68, 18, 18);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         width: 100vw;
-        max-height: 100px;
-        padding: 1.8em;
+        height:4em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(68, 18, 18);
+        width: 100vw;
+        
     }
 
     &__button{
         color:teal;
+        justify-content: space-between;
     }
-
-
+    
 }
+
+
+
+
+
+
+
 
 @import "./responsive.scss";
