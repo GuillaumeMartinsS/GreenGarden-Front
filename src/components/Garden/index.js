@@ -6,7 +6,7 @@ import './styles.scss';
 const Garden = () => (
 
   <main className='main__container'>
-    {/* <Button color="teal" size="mini" className='main__button'>Mettre à jour</Button> */}
+    <Button color="blue" size="large" className='main__button' Horizontally Attached="right">Mettre à jour</Button>
     <div className='main__garden'>
       <Plant></Plant>
       <Plant></Plant>

@@ -9,29 +9,31 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center;
-        align-content: space-between;
         justify-content: space-between;
-        display:flex;
-        border:solid 0.2em blue;
+        // border:solid 0.2em blue;
         flex-direction: column;
         height: 100%;
         width: 100vw;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
 
     &__garden{
-        height: 100%;
         display: flex;
         justify-content: space-around;
         align-content:end;
         flex-wrap: wrap;
+        // border:solid 0.2em green;
+
     }
 
     &__button{
-        height: 100vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 10em;
+        padding-top: 5em;
+        // border:solid 0.2em red;
+        align-self: center;
     }
 
 
