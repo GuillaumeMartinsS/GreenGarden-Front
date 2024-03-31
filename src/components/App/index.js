@@ -18,18 +18,18 @@ import './styles.scss';
 
 function App() {
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  useEffect(
-    () => {
-      dispatch(getGardenById());
-    },
-    [dispatch],
-  );
+  // useEffect(
+  //   () => {
+  //     dispatch(getGardenById());
+  //   },
+  //   [dispatch],
+  // );
 
-  const state = useSelector((state) => state.garden);
-  console.log('je lis le state');
-  console.log(state)
+  // const state = useSelector((state) => state.garden);
+  // console.log('je lis le state');
+  // console.log(state)
 
   return (
     <div className="App">
