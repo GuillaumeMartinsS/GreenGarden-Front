@@ -21,12 +21,13 @@ const Garden = () => {
     () => {
       dispatch(getGardenById(id));
     },
-    [dispatch],
+    [],
   );
 
   const state = useSelector((state) => state.garden);
   console.log('je lis le state');
   console.log(state);
+
 
   return (
 
