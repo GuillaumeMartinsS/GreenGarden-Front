@@ -2,20 +2,18 @@
 .header {
     
     &__container {
-        z-index: 10;
-        position: fixed;
-        top: 0;
+        display:block;
         width: 100vw;
-        height: 3rem;
+        height: 4em;
         background-color: green;
         color: white;
         text-align : center;
         padding: 0 2rem;
-        border-bottom: 10px solid rgb(68, 18, 18);
         display:flex;
         align-items: center;
         justify-content: space-between;
         padding: 1.5em;
+        border-bottom: 0.5em solid rgb(68, 18, 18);
     }
 
     &__title {
@@ -23,8 +21,8 @@
     }
 
     &__logo{
-        height: 2em;
-        width: 2em;
+        height: 3em;
+        width: 3em;
         background-size: 100%;
         background-repeat: no-repeat;
         justify-content: flex-start;

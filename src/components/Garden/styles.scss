@@ -1,0 +1,45 @@
+
+
+.main{
+
+    &__container
+    {
+        display:flex;
+        background-image: url("./prairie.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        justify-content: space-between;
+        // border:solid 0.2em blue;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+
+    &__garden{
+        display: flex;
+        justify-content: space-around;
+        align-content:end;
+        flex-wrap: wrap;
+        // border:solid 0.2em green;
+
+    }
+
+    &__button{
+        display: flex;
+        width: 10em;
+        padding-top: 5em;
+        // border:solid 0.2em red;
+        align-self: center;
+    }
+
+
+}
+
+
+
+
+@import "./responsive.scss";

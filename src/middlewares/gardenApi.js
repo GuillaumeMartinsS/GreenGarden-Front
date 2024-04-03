@@ -9,12 +9,13 @@ import {
 const gardenApi = (store) => (next) => (action) =>
 {
     const baseURL = 'http://localhost:8080';
-    const id = 1;
+    // const id = 1;
+    // console.log(action.id);
 
     switch (action.type) 
     {
         case GET_GARDEN_BY_ID: 
-            axios.get(`${baseURL}/api/garden/${id}`)
+            axios.get(`${baseURL}/api/garden/${action.id}`)
             .then((response) => {
               console.log('je suis dans le middleware');
               console.log(response.data);
