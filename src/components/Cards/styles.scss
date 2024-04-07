@@ -24,6 +24,12 @@
         margin-bottom: 0.5em;
         border: 0.2em solid rgb(8, 58, 3);
     }
+
+    &__content
+    {
+        margin-bottom: 0.5em;
+    }
+
 }
 
 @import "./responsive.scss";

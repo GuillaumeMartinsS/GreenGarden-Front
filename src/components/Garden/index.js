@@ -28,20 +28,21 @@ const Garden = () => {
   console.log('je lis le state');
   console.log(plants);
 
-
   return (
 
   <main className='main__container'>
     <Button color="blue" size="large" className='main__button' Horizontally Attached="right">Mettre à jour</Button>
     <div className='main__garden'>
-       {plants.map((plant) => (
+       {plants && (plants.map((plant) => (
           <Plant
             key={plant.id}
             age={plant.age}
             hydration={plant.hydration}
             genre={plant.genre.name}  
           />
-      ))}
+      )))}
+
+
     </div>
 
   </main>  )
