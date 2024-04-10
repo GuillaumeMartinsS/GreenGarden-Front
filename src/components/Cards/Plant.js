@@ -4,6 +4,7 @@ import {Button} from "semantic-ui-react";
 import './styles.scss';
 
 const Plant = ({
+  id,
   age,
   hydration,
   genre

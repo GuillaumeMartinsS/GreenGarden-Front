@@ -1,4 +1,4 @@
-import { SAVE_GARDEN_WITH_ID } from '../actions/gardens';
+import { SAVE_GARDEN_WITH_ID, RESET_GARDEN_STATE } from '../actions/gardens';
 
 export const initialState = {
 plants:[]
@@ -12,6 +12,12 @@ const reducer = (state = initialState, action = {}) => {
         ...state,      
         plants: action.garden.plants,
       };
+
+    case RESET_GARDEN_STATE:
+      return {    
+        plants:[]
+      };
+
     default:
       return state;
   }
