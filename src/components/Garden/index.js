@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 import {
   getGardenById, updateGardenById
-} from '../../actions/gardens';
+} from '../../actions/garden';
 
 import Plant from '../Cards/Plant';
 import './styles.scss';
@@ -42,6 +42,7 @@ const Garden = () => {
        {plants && (plants.map((plant) => (
           <Plant
             key={plant.id}
+            id={plant.id}
             age={plant.age}
             hydration={plant.hydration}
             genre={plant.genre.name}  

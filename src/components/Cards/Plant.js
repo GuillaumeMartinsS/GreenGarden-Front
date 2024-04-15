@@ -1,16 +1,30 @@
-
-
 import {Button} from "semantic-ui-react";
 import './styles.scss';
+
+import {useDispatch} from 'react-redux';
+
+import {
+  hydratePlantById
+} from '../../actions/plant';
+
 
 const Plant = ({
   id,
   age,
   hydration,
-  genre
+  genre,
 }
-) => (
+) => 
 
+{
+  const dispatch = useDispatch();
+
+  const handleHydrate = () => {
+  dispatch(hydratePlantById(id));
+  } 
+
+
+  return(
   <article className='article'>
     <div className="article__img" > </div>
       <div className='article__content'>
@@ -18,9 +32,10 @@ const Plant = ({
         <div className='article__hydration'> Hydratation : {hydration}</div>
         <div className='article__genre'> Genre : {genre}</div>
         </div>
-      <Button color="blue" size="mini" className='article__hydrate'>
+      <Button color="blue" size="mini" onClick={handleHydrate} className='article__hydrate'>
             Arroser</Button>
-  </article>  
+  </article>  )
 
-)
+}
+
 export default Plant

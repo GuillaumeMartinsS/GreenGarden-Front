@@ -1,4 +1,4 @@
-import { SAVE_GARDEN_WITH_ID, RESET_GARDEN_STATE } from '../actions/gardens';
+import { SAVE_GARDEN_WITH_ID, RESET_GARDEN_STATE } from '../actions/garden';
 
 export const initialState = {
 plants:[]
@@ -8,6 +8,8 @@ plants:[]
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case SAVE_GARDEN_WITH_ID:
+      console.log("je suis dans le reducer");
+      console.log(action.garden.plants);
       return {
         ...state,      
         plants: action.garden.plants,

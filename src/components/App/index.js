@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 // == IMPORT ASSETS
 import {
   getGardenById,
-} from '../../actions/gardens';
+} from '../../actions/garden';
 
 import Header from '../Header';
 import Garden from '../Garden';

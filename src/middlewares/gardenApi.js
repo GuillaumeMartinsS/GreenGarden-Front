@@ -3,8 +3,8 @@ import axios from "axios";
 
 // == IMPORT ASSETS
 import {
-  GET_GARDEN_BY_ID, resetGardenState, saveGardenWithId, UPDATE_GARDEN_BY_ID
-} from '../actions/gardens';
+  GET_GARDEN_BY_ID, resetGardenState, saveGardenWithId, UPDATE_GARDEN_BY_ID, getGardenById
+} from '../actions/garden';
 
 const gardenApi = (store) => (next) => (action) =>
 {
@@ -32,7 +32,6 @@ const gardenApi = (store) => (next) => (action) =>
           .then((response) => {
             console.log('je suis dans le middleware : action UPDATE_GARDEN_BY_ID');
             console.log(response.data);
-            store.dispatch(resetGardenState())
             store.dispatch(saveGardenWithId(response.data))
           })
           .catch((error) => {
