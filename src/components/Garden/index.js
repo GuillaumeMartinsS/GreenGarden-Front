@@ -45,7 +45,8 @@ const Garden = () => {
             id={plant.id}
             age={plant.age}
             hydration={plant.hydration}
-            genre={plant.genre.name}  
+            genre={plant.genre.name} 
+            picture= {plant.picture} 
           />
       )))}
 
