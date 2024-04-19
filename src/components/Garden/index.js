@@ -5,8 +5,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import { useParams } from "react-router-dom";
 
 import {
-  getGardenById,
-} from '../../actions/gardens';
+  getGardenById, updateGardenById
+} from '../../actions/garden';
 
 import Plant from '../Cards/Plant';
 import './styles.scss';
@@ -16,6 +16,8 @@ const Garden = () => {
   const dispatch = useDispatch();
 
   const {id} = useParams();
+
+  console.log(id);
 
   useEffect(
     () => {
@@ -28,17 +30,23 @@ const Garden = () => {
   console.log('je lis le state');
   console.log(plants);
 
+  const handleUpdate = () => {
+    dispatch(updateGardenById(id));
+  }
+
   return (
 
   <main className='main__container'>
-    <Button color="blue" size="large" className='main__button' Horizontally Attached="right">Mettre à jour</Button>
+    <Button color="blue" size="large" className='main__button' Horizontally Attached="right" onClick={handleUpdate}>Mettre à jour</Button>
     <div className='main__garden'>
        {plants && (plants.map((plant) => (
           <Plant
             key={plant.id}
+            id={plant.id}
             age={plant.age}
             hydration={plant.hydration}
-            genre={plant.genre.name}  
+            genre={plant.genre.name} 
+            picture= {plant.picture} 
           />
       )))}
 
